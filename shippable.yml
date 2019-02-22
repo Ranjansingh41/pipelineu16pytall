@@ -1,12 +1,12 @@
 language: python
 
+# Version number
 python:
-  - 2.7  
-  - 3.7 
-  - pypy 
-  - pypy3 
-  
- 
+  - 2.7 #.12
+  - 3.7 #.5
+  - pypy
+  - pypy3
+
 build:
   pre_ci_boot:
     image_name: drydock/u16pytall
@@ -14,7 +14,7 @@ build:
     pull: true
     
   ci:
-    - python --version 
-    - pip --version 
-    - virtualenv --version
+    - python -V
+    - pip --version
     - java -version
+    - virtualenv --version
