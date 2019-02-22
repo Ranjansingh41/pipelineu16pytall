@@ -11,7 +11,7 @@ build:
   pre_ci_boot:
     image_name: drydock/u16pytall
     image_tag: master
-    pull: true
+    pull: false
     
   ci:
     - python -V
